@@ -22,7 +22,5 @@ const splitText = (text, num) => {
 };
 
 
-// splitText('abcd efg', 4) => 'Abcd\n efg\nH...'
-// text[0].toUpperCase() + text.slice(1);
  // for examle
 console.log(splitText('abcd efghabcd efghabcd efgh', 5));
