@@ -25,7 +25,7 @@ export function createCalculator() {
 };
 
 
-// for example
+// for example ============================================
 const calc1 = createCalculator();
 const calc2 = createCalculator();
 
@@ -35,5 +35,13 @@ console.log(calc1.getMemo());  //  42
 calc1.decrease(12)
 console.log(calc1.getMemo());  //  30
 
+calc2.add(15)
+console.log(calc2.getMemo());  //  15
+
+calc2.decrease(12)
+console.log(calc2.getMemo());  //  3
+
 calc1.reset()
-console.log(calc1.getMemo());  //
+console.log(calc1.getMemo());  //  0
+calc2.reset()
+console.log(calc2.getMemo());  //  0
