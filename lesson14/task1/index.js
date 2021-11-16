@@ -13,6 +13,6 @@ export function setMessage (text) {
 
 
 // for example
-sendMessage('Ann');
-setMessage('Good job');
-sendMessage('Ann');
+// sendMessage('Ann');
+// setMessage('Good job');
+// sendMessage('Ann');

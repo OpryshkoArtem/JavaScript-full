@@ -24,10 +24,12 @@ const createMessenger = () => {
 export default createMessenger;
 
 // export default function createMessenger() {...};
-const messenger = createMessenger();
-messenger.sendMessage('Bob');
-messenger.setMessage('Good job');
-messenger.sendMessage('Bob');
+
+// for example
+// const messenger = createMessenger();
+// messenger.sendMessage('Bob');
+// messenger.setMessage('Good job');
+// messenger.sendMessage('Bob');
 
 
 
