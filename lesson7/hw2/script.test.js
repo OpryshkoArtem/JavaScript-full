@@ -14,9 +14,3 @@ it ('should get wrong sequence', () => {
 	const result = reverseArray([1, 2, 3]);
 	expect(result).not.toEqual([2, 3, 1]);
 });
-
-
-// it ('', () => {
-	// const result = ;
-	// expect(result).toEqual();
-// });

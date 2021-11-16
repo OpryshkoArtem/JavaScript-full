@@ -1,4 +1,4 @@
-const getAdults = obj => {
+ export const getAdults = obj => {
 	const result = {};
 
 	for (let key in obj) {
