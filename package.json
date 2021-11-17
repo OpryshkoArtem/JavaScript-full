@@ -1,24 +1,27 @@
 {
-  "name": "JavaScript-full",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OpryshkoArtem/JavaScript-full.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OpryshkoArtem/JavaScript-full/issues"
-  },
-  "homepage": "https://github.com/OpryshkoArtem/JavaScript-full#readme",
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0"
-  }
+	"name": "JavaScript-full",
+	"version": "1.0.0",
+	"description": "",
+	"main": ".eslintrc.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"@babel/eslint-parser": "^7.16.3",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-babel": "^5.3.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.4.1"
+	},
+	"dependencies": {
+		"core-js": "^3.19.1"
+	}
 }
