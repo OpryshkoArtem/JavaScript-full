@@ -2,9 +2,10 @@
 	"name": "JavaScript-full",
 	"version": "1.0.0",
 	"description": "",
-	"main": ".eslintrc.js",
+	"main": ".eslintrc",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"lint": "eslint ./test",
+		"lint:fix": "eslint ./test --fix"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,6 +16,7 @@
 		"@babel/preset-env": "^7.16.4",
 		"@babel/eslint-parser": "^7.16.3",
 		"eslint": "^7.32.0",
+		"eslint-plugin-import": "^2.25.2",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-babel": "^5.3.1",
