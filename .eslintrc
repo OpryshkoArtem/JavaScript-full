@@ -48,6 +48,7 @@
 	  "node": true   //  info youtube
 	},
 	"rules": {
+	  "prettier/prettier": "error",        //підсказка з Slack --stepanets
 	  "strict": 0,
 	  "no-alert": 0,
 	  "no-console": 0,    //  off  warn  error
@@ -61,7 +62,8 @@
 	  "import/extensions": 0,
 	  "import/no-dynamic-require": 0,
 	  "import/prefer-default-export": 0,
-	  "prefer-template": 0
+	  "prefer-template": 0,
+	  "eol-last": "warn"
 	}
  }
 

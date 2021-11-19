@@ -1,11 +1,11 @@
 {
-	"name": "JavaScript-full",
+	"name": "javascript-full",
 	"version": "1.0.0",
 	"description": "",
 	"main": ".eslintrc",
 	"scripts": {
-		"lint": "eslint ./test",
-		"lint:fix": "eslint ./test --fix"
+		"lint": "eslint ./lesson17",
+		"lint:fix": "eslint ./lesson17 --fix"
 	},
 	"keywords": [],
 	"author": "",
