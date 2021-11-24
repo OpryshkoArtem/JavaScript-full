@@ -1,4 +1,4 @@
-export const setTitle = text => {
+export const setTitle = (text) => {
   const replaceTextInElem = document.querySelector('.title');
   replaceTextInElem.textContent = text;
 };
