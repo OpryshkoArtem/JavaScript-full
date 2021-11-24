@@ -3,5 +3,4 @@ export const clearList = () => {
   listElem.innerHTML = '';
 };
 
-
 // clearList();
