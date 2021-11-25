@@ -3,4 +3,4 @@ export const getSection = num => {
   return spanData.closest('.box').dataset.section;
 };
 
-getSection();
+// getSection();
