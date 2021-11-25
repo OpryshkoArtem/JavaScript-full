@@ -12,11 +12,16 @@ const renderTasks = tasksList => {
   // put your code here
   const listElement = document.querySelector('.list');
 
-  const listElementItems = tasksList.map(({ text }) => {
+  const listElementItems = tasksList.map(({ text, done }) => {
     const listElemItem = document.createElement('li');
     listElemItem.classList.add('list__item');
+		if(done) {
+			listElemItem.classList.add('list__item_done');
+		}
     const elemCheck = document.createElement('input');
     elemCheck.setAttribute('type', 'checkbox');
+		elemCheck.checked = done;
+    elemCheck.classList.add('list__item-checkbox');
     listElemItem.append(elemCheck, text);
 
     return listElemItem;
@@ -25,4 +30,4 @@ const renderTasks = tasksList => {
   listElement.append(...listElementItems);
 };
 
-renderTasks(tasks);
+// renderTasks(tasks);
