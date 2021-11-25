@@ -30,4 +30,4 @@ const renderTasks = tasksList => {
   listElement.append(...listElementItems);
 };
 
-// renderTasks(tasks);
+renderTasks(tasks);
