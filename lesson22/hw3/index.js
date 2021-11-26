@@ -1,6 +1,6 @@
 const checkboxElement = document.querySelector('.task-status');
 
-const checkStatus = e => {
+const checkStatus = () => {
   console.log(checkboxElement.checked);
 };
 
