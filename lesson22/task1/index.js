@@ -7,32 +7,35 @@ const handler = (text, color) => {
   divOut.innerHTML += `<span style="color: ${color}; margin-left: 8px">${text}</span>`;
 };
 
-const logGrayDiv = handler.bind(null, 'div', 'gray');
+const logGrayDiv = handler.bind(null, 'div', 'grey');
 const logGreenDiv = handler.bind(null, 'div', 'green');
-const logGrayP = handler.bind(null, 'p', 'gray');
+const logGrayP = handler.bind(null, 'p', 'grey');
 const logGreenP = handler.bind(null, 'p', 'green');
-const logGraySpan = handler.bind(null, 'span', 'gray');
+const logGraySpan = handler.bind(null, 'span', 'grey');
 const logGreenSpan = handler.bind(null, 'span', 'green');
 
-div.addEventListener('click', logGrayDiv, { capture: true });
-div.addEventListener('click', logGreenDiv);
+// div.addEventListener('click', logGrayDiv, { capture: true });
+// div.addEventListener('click', logGreenDiv);
 
-p.addEventListener('click', logGrayP, { capture: true });
-p.addEventListener('click', logGreenP);
+// p.addEventListener('click', logGrayP, { capture: true });
+// p.addEventListener('click', logGreenP);
 
-span.addEventListener('click', logGraySpan, { capture: true });
-span.addEventListener('click', logGreenSpan);
+// span.addEventListener('click', logGraySpan, { capture: true });
+// span.addEventListener('click', logGreenSpan);
 
 // BUTTONS
 const clearBtn = document.querySelector('.clear-btn');
 const removeHandlers = document.querySelector('.remove-handlers-btn');
 const attachHandlers = document.querySelector('.attach-handlers-btn');
 
-// const clear = () => {
-//   divOut.innerHTML = null;
-// };
-
-// clearBtn.addEventListener('clack', clear);
+const attach = () => {
+  div.addEventListener('click', logGrayDiv, { capture: true });
+  div.addEventListener('click', logGreenDiv);
+  p.addEventListener('click', logGrayP, { capture: true });
+  p.addEventListener('click', logGreenP);
+  span.addEventListener('click', logGraySpan, { capture: true });
+  span.addEventListener('click', logGreenSpan);
+};
 
 const remove = () => {
   div.removeEventListener('click', logGrayDiv, { capture: true });
@@ -44,14 +47,4 @@ const remove = () => {
 };
 
 removeHandlers.addEventListener('click', remove);
-
-const attach = () => {
-  div.addEventListener('click', logGrayDiv, { capture: true });
-  div.addEventListener('click', logGreenDiv);
-  p.addEventListener('click', logGrayP, { capture: true });
-  p.addEventListener('click', logGreenP);
-  span.addEventListener('click', logGraySpan, { capture: true });
-  span.addEventListener('click', logGreenSpan);
-};
-
 attachHandlers.addEventListener('click', attach);
