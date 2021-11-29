@@ -33,15 +33,16 @@ const passwordChange = event => {
 emailInputElement.addEventListener('input', emailChange);
 passwordInputElement.addEventListener('input', passwordChange);
 
-
 const formElement = document.querySelector('.login-form');
 
 const onFormSubmit = event => {
-	event.preventDefault();
-	const formData = [...new FormData(formElement)]
-	.reduce((acc, [field, value]) => ({...acc, [field]: value}), {});
+  event.preventDefault();
+  const formData = [...new FormData(formElement)].reduce(
+    (acc, [field, value]) => ({ ...acc, [field]: value }),
+    {},
+  );
 
-	alert(JSON.stringify(formData));
+  alert(JSON.stringify(formData));
 };
 
 formElement.addEventListener('submit', onFormSubmit);
