@@ -1,5 +1,6 @@
 const generateNumbersRange = (from, to) => {
   const result = [];
+  // eslint-disable-next-line no-plusplus
   for (let i = from; i <= to; i++) {
     result.push(i);
   }
@@ -46,7 +47,7 @@ const onSeatSelect = event => {
   const { lineNumber } = event.target.closest('.sector__line').dataset;
   const { sectorNumber } = event.target.closest('.sector').dataset;
 
-  const selectedSeatElement = document.querySelector('.board__selected-seat');
+  const selectedSeatElement = document.querySelector('.board');
 
   selectedSeatElement.textContent = `S ${seatNumber} - L ${lineNumber} - S ${sectorNumber}`;
 };
