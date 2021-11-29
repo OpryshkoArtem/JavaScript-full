@@ -3,7 +3,7 @@ const p = document.querySelector('.rect_p');
 const span = document.querySelector('.rect_span');
 
 const handler = (text, color) => {
-	const divOut = document.querySelector('.events-list');
+  const divOut = document.querySelector('.events-list');
   divOut.innerHTML += `<span style="color: ${color}; margin-left: 8px">${text}</span>`;
 };
 
@@ -30,8 +30,8 @@ const removeHandlers = document.querySelector('.remove-handlers-btn');
 const attachHandlers = document.querySelector('.attach-handlers-btn');
 
 const clearOutput = () => {
-    const divOut = document.querySelector('.events-list');
-    divOut.innerHTML = '';
+  const divOut = document.querySelector('.events-list');
+  divOut.innerHTML = '';
 };
 clearBtn.addEventListener('click', clearOutput);
 
