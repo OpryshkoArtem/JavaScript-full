@@ -26,7 +26,7 @@ export const shmoment = initDate => {
       return this;
     },
     subtract(type, number) {
-      result = new Date(result[setTimes[type]](result[getTimes[type]]() + number));
+      result = new Date(result[setTimes[type]](result[getTimes[type]]() - number));
       return this;
     },
     result() {
