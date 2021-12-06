@@ -1,8 +1,9 @@
 export const pinger = (count, period) => {
-  // put your code here
-  let initialValue = count;
+  let i = count;
+  console.log('Ping');
   const interval = setInterval(() => {
-    if (initialValue-- > 0) {
+    // eslint-disable-next-line no-plusplus
+    if (--i > 0) {
       console.log('Ping');
     } else {
       clearInterval();
@@ -12,4 +13,4 @@ export const pinger = (count, period) => {
 
 // examples
 // pinger(5, 100); // makes 5 writes with 100 ms interval
-// pinger(7, 1500); // makes 7 writes with 1500 ms interval
+pinger(7, 1500); // makes 7 writes with 1500 ms interval
