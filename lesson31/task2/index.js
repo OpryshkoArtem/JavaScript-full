@@ -24,7 +24,6 @@ export const asyncCalculator = numbr =>
         }),
     );
 
-
 // test data
 // const res = asyncCalculator(5);
 // const res2 = asyncCalculator(10);
