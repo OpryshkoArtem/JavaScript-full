@@ -7,6 +7,9 @@ export function getTasksList() {
 
 export function getTaskById(taskId) {
   //  getTaskById logic
+  return fetch(baseUrl)
+    .then(response => response.json())
+    .then(data => data.filter(elem => elem.id === taskId));
 }
 
 //
