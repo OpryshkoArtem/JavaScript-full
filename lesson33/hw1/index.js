@@ -22,3 +22,7 @@ getTasksList().then(tasksList => {
 getTaskById('2').then(taskData => {
   console.log(taskData); // {'id':'2', 'done':true ... }
 });
+
+getTaskById('1').then(taskData => {
+  console.log(taskData); // {'id':'3', 'done':false ... }
+});
