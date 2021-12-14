@@ -2,7 +2,6 @@ const baseUrl = 'https://61b8210264e4a10017d18dc6.mockapi.io/api/v1/users';
 
 const formElem = document.querySelector('.login-form');
 const submitBtnElem = document.querySelector('.submit-button');
-const nameInputElem = document.querySelector('[name="name"]');
 
 const onInputChange = event => {
   const isValidForm = formElem.reportValidity();
