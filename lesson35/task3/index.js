@@ -4,7 +4,7 @@ import { renderRepos, cleanReposList } from './scripts/repositor.js';
 import { showSpinner, hideSpinner } from './scripts/spinner.js';
 
 const defaultUser = {
-  avatar_url: 'https://avatars3.githubusercontent.com/u10002',
+  avatar_url: 'https://avatars3.githubusercontent.com/u10001',
   location: '',
   name: '',
 };
